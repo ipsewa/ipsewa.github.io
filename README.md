@@ -18,7 +18,11 @@ This repository contains the GitHub Pages website for IP Sewa, with sections for
 
 ## Files
 
-- `index.html` — complete landing page and styling in a single HTML file
+- `index.html` — the landing page (services, free tools, process, guides, FAQ, network links)
+- `404.html` — branded not-found page
+- `assets/` — self-hosted Bootstrap 5.3.3 and DM Sans (no Google Fonts, no CDN)
+- `robots.txt`, `sitemap.xml` — crawl hints for search engines
+- `.nojekyll` — serve files as-is, without a Jekyll build
 - `README.md` — project documentation
 
 ## Local preview
@@ -42,6 +46,9 @@ This site is configured for GitHub Pages and is published from the repository ro
 ## Notes
 
 The page is intentionally static and self-contained, making it easy to edit and deploy without a build step.
+It makes **no API calls and runs no scripts** — the hero figures are fixed text, refreshed by hand when
+a new bulletin ships. Every link points at a live ipsewa.com page; re-check them if a service or guide
+URL changes.
 
 ## License
 
